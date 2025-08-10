@@ -28,7 +28,7 @@ function openStoriesModal() {
     applePodcastLinkDiv.style.display = "block";
     applePodcastLinkDiv.innerHTML = `
       <a href="podcast://${applePodcastsRSS}" style="font-weight:bold; color:#ff6f61; text-decoration:none;">
-        Open in Apple Podcasts ${applePodcastsRSS.substring(-10)}
+        Open in Apple Podcasts
       </a>
     `;
   } else {

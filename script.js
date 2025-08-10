@@ -1,6 +1,6 @@
 
 // URLs placeholders, replace these with your actual URLs
-const applePodcastsRSS = "script.google.com/macros/s/AKfycbwAhX2LV_2cMMN6unuAlb6a0RVFVpKy_dHLYaptq5627L4sWyl-O88IsQAMVZJdhBNu2g/exec"; // e.g. "podcasts://yourfeedurl.com/rss"
+const applePodcastsRSS = "script.google.com/macros/s/AKfycbxFT3Coznctvl91o3ftfXzI5zv-TUYIp1BBadjyNxrWCbj4ugvNpQ0_mzdblfvshr8K4g/exec"; // e.g. "podcasts://yourfeedurl.com/rss"
 const mp3Files = [
   "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/artlessMendaciousQuiescent.mp3",
   "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/encomiumLagniappeAbrogate.mp3",
@@ -43,7 +43,6 @@ function openStoriesModal() {
   // Setup audio player to play all MP3s autoplay one after another
   let currentTrack = 0;
   audioPlayer.src = mp3Files[currentTrack];
-  audioPlayer.play();
 
   audioPlayer.onended = () => {
     currentTrack++;
@@ -68,17 +67,17 @@ window.onclick = function(event) {
 };
 
 function openFormModal() {
-            document.getElementById('formModal').style.display = 'block';
-        }
+    document.getElementById('formModal').style.display = 'block';
+}
 
-        function closeFormModal() {
-            document.getElementById('formModal').style.display = 'none';
-        }
+function closeFormModal() {
+    document.getElementById('formModal').style.display = 'none';
+}
 
-        // Also close if user clicks outside modal content
-        window.onclick = function(event) {
-            const modal = document.getElementById('formModal');
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
+// Also close if user clicks outside modal content
+window.onclick = function(event) {
+    const modal = document.getElementById('formModal');
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}

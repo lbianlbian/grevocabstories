@@ -2,11 +2,11 @@
 // URLs placeholders, replace these with your actual URLs
 const applePodcastsRSS = "script.google.com/macros/s/AKfycbwgCAv_sxADAFjGmUm8FrSxzV-ReK22es7iAzfgGi-wIS3OpgajF802SIMsrh7mWFhbtw/exec"; // e.g. "podcasts://yourfeedurl.com/rss"
 const mp3Files = [
-  "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/artlessMendaciousQuiescent.mp3",
-  "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/encomiumLagniappeAbrogate.mp3",
-  "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/enervatedCharnelAbjure.mp3",
-  "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/lacrymoseLasciviousAver.mp3",
-  "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/lugubriousLoquaciousFecund.mp3"
+  "artlessMendaciousQuiescent.mp3",
+  "encomiumLagniappeAbrogate.mp3",
+  "enervatedCharnelAbjure.mp3",
+  "lacrymoseLasciviousAver.mp3",
+  "lugubriousLoquaciousFecund.mp3"
 ];
 
 const storiesModal = document.getElementById('storiesModal');
@@ -38,7 +38,7 @@ function openStoriesModal() {
 
   // Populate the download links with file URLs and nice labels
   downloadLinksUl.innerHTML = mp3Files.map((url, i) => {
-    return `<li><a href="${url}" target='_blank'>MP3 File ${i+1}</a></li>`;
+    return `<li><a href="${url}" download>MP3 File ${i+1}</a></li>`;
   }).join('');
 
   // Setup audio player to play all MP3s autoplay one after another

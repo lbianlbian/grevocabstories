@@ -1,6 +1,6 @@
 
 // URLs placeholders, replace these with your actual URLs
-const applePodcastsRSS = "script.google.com/macros/s/AKfycbyue2a1uiMQ_QR7gMTJgGFHRfgECmNcjUuSftD8bTM8cj2ooNGtcqC65ATJkIgCaaTCWw/exec"; // e.g. "podcasts://yourfeedurl.com/rss"
+const applePodcastsRSS = "script.google.com/macros/s/AKfycbwgCAv_sxADAFjGmUm8FrSxzV-ReK22es7iAzfgGi-wIS3OpgajF802SIMsrh7mWFhbtw/exec"; // e.g. "podcasts://yourfeedurl.com/rss"
 const mp3Files = [
   "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/artlessMendaciousQuiescent.mp3",
   "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/encomiumLagniappeAbrogate.mp3",

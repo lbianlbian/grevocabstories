@@ -27,10 +27,11 @@ function openStoriesModal() {
   if (isAppleDevice()) {
     applePodcastLinkDiv.style.display = "block";
     applePodcastLinkDiv.innerHTML = `
-      <a href="podcast://${applePodcastsRSS}" style="font-weight:bold; color:#ff6f61; text-decoration:none;">
+      <a href="podcast://${applePodcastsRSS}" style="font-weight:bold; text-decoration:none;">
         Open in Apple Podcasts
       </a>
     `;
+    
   } else {
     applePodcastLinkDiv.style.display = "none";
   }

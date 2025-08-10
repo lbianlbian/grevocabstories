@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRE Vocab Stories</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>GRE Vocab Stories</h1>
+        <h2>Memorize GRE Vocab with weird &amp; funny stories!</h2>
+    </header>
+
+    <!-- Modal Overlay -->
+    <div id="formModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeFormModal()">&times;</span>
+        <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSc1Sw9eNdxHbPvu5BfNxDLIrOU6SfdRLOYvAhZ91Hkg30m8aw/viewform?usp=sf_link" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        Loading…
+        </iframe>
+    </div>
+    </div>
+
+    <!-- Modal for Generate Stories -->
+<div id="storiesModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeStoriesModal()">&times;</span>
+    <h2>Stories are ready!</h2>
+    <div id="applePodcastLink" style="display:none; margin-bottom: 15px;">
+      <!-- Apple podcasts link will be inserted here by JS -->
+    </div>
+    <div id="downloadLinks" style="margin-bottom: 20px;">
+      <h3>Download MP3 files:</h3>
+      <ul>
+        <li><a href="#" download>MP3 File 1</a></li>
+        <li><a href="#" download>MP3 File 2</a></li>
+        <li><a href="#" download>MP3 File 3</a></li>
+        <li><a href="#" download>MP3 File 4</a></li>
+        <li><a href="#" download>MP3 File 5</a></li>
+      </ul>
+    </div>
+    <div id="audioPlayerContainer">
+      <h3>Listen:</h3>
+      <audio id="audioPlayer" controls></audio>
+    </div>
+  </div>
+</div>
+
+
+    <div class="button-container">
+<button class="primary-btn" onclick="openStoriesModal()">Generate Stories</button>
+        <button class="secondary-btn" onclick="openFormModal()">Add Words</button>
+    </div>
+
+    <main>
+        <div class="word-box">Lugubrious</div>
+        <div class="word-box">Loquacious</div>
+        <div class="word-box">Artless</div>
+        <div class="word-box">Mendacious</div>
+        <div class="word-box">Quiescent</div>
+        <div class="word-box">Encomium</div>
+        <div class="word-box">Lagniappe</div>
+        <div class="word-box">Abrogate</div>
+        <div class="word-box">Enervated</div>
+        <div class="word-box">Charnel</div>
+        <div class="word-box">Abjure</div>
+        <div class="word-box">Lacrymose</div>
+        <div class="word-box">Lascivious</div>
+        <div class="word-box">Aver</div>
+        <div class="word-box">Fecund</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

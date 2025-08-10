@@ -1,6 +1,6 @@
 
 // URLs placeholders, replace these with your actual URLs
-const applePodcastsRSS = "script.google.com/macros/s/AKfycbxFT3Coznctvl91o3ftfXzI5zv-TUYIp1BBadjyNxrWCbj4ugvNpQ0_mzdblfvshr8K4g/exec"; // e.g. "podcasts://yourfeedurl.com/rss"
+const applePodcastsRSS = "script.google.com/macros/s/AKfycbyue2a1uiMQ_QR7gMTJgGFHRfgECmNcjUuSftD8bTM8cj2ooNGtcqC65ATJkIgCaaTCWw/exec"; // e.g. "podcasts://yourfeedurl.com/rss"
 const mp3Files = [
   "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/artlessMendaciousQuiescent.mp3",
   "https://ia601007.us.archive.org/35/items/artlessMendaciousQuiescent/encomiumLagniappeAbrogate.mp3",
@@ -28,7 +28,7 @@ function openStoriesModal() {
     applePodcastLinkDiv.style.display = "block";
     applePodcastLinkDiv.innerHTML = `
       <a href="podcasts://${applePodcastsRSS}" style="font-weight:bold; color:#ff6f61; text-decoration:none;">
-        Open in Apple Podcasts
+        Open in Apple Podcasts ${applePodcastsRSS.substring(-10)}
       </a>
     `;
   } else {
